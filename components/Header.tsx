@@ -93,7 +93,9 @@ const Header: React.FC<HeaderProps> = ({
                 gap-x-2
                 items-center
                 '>
-                    <button className='
+                    <button
+                        onClick={() => router.push('/')}
+                        className='
                     rounded-full
                     p-2
                     bg-white
@@ -105,7 +107,9 @@ const Header: React.FC<HeaderProps> = ({
                     '>
                         <HiHome className='text-black' size={20} />
                     </button>
-                    <button className='
+                    <button
+                        onClick={() => router.push('/search')}
+                        className='
                     rounded-full
                     p-2
                     bg-white
